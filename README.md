@@ -99,7 +99,7 @@ select deptno,ename,empno,sum(sal) as 'Total Salary' from EMP group by deptno,en
 --11. Find out salary of both MILLER and SMITH.
 
 
-select ename,sal from EMP where ename='MILLER' or ename='SMITH'
+select ename,sal from EMP where ename='MILLER' and ename='SMITH'
 										 
 
 --12. Find out the names of the employees whose name begin with ‘A’ or ‘M’. 
