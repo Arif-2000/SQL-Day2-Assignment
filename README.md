@@ -110,7 +110,7 @@ select ename from EMP where ename like 'A%' or ename like 'M%'
 --13. Compute yearly salary of SMITH.
 
 
-select ename,sum(sal) as 'Yearly Salary' from EMP where ename='SMITH' group by ename
+select ename,12*(sal) as 'Yearly Salary' from EMP where ename='SMITH' group by ename
 
 --14. List the name and salary for all employees whose salary is not in the range of 1500 and 2850. 
 
